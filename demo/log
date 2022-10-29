@@ -1,0 +1,219 @@
+    1  node
+    2  apt-get install nodejs
+    3  apt install nodejs
+    4  apt update
+    5  apt install nodejs
+    6  apt install npm
+    7  mkdir webcom
+    8  cd webcom/
+    9  npm init -y
+   10  ls
+   11  touch app.js
+   12  npm install mongodb
+   13  ls
+   14  exit
+   15  s
+   16  mongo
+   17  vi
+   18  apt install vim
+   19  ls
+   20  ls docker-entrypoint-initdb.d/
+   21  node
+   22  ls
+   23  cd webcom/
+   24  ls
+   25  mongo
+   26  ls
+   27  vi app.js 
+   28  npm install mongodb
+   29  ls
+   30  vi npm-debug.log 
+   31  ls
+   32  vi app.js 
+   33  exit
+   34  ls
+   35  cd webcom/
+   36  sl
+   37  ls
+   38  vi app.js
+   39  mongo
+   40  mongo -u webcom
+   41  mongo webcom -u webcom
+   42  exit
+   43  ls
+   44  cd webcom/
+   45  ls
+   46  npm install node-rest-client
+   47  npm install mongodb
+   48  npm install assert
+   49  vi app.js
+   50  ls -a
+   51  rm app.js.swp
+   52  rm .app.js.swp
+   53  vi app.js
+   54  mv app.js app.js_bk 
+   55  vi app.js
+   56  ls
+   57  pwd
+   58  ls
+   59  vi app.js
+   60  ll 
+   61  vi app.js
+   62  ls
+   63  vi app.js
+   64  exit
+   65  netstat -ano
+   66  curl http://localhost:3000
+   67  curl http://localhost:3000/
+   68  wget http://localhost:3000/
+   69  apt install curl
+   70  curl http://localhost:3000/
+   71  http://localhost:1337/list?latitudegt=10.0102380&latitudelt=30.0102380&longitudegt=20.929289111l&longitudelt=40.929289111
+   72  http://localhost:1337/list?latitudegt=10.0102380\&latitudelt=30.0102380\&longitudegt=20.929289111l\&longitudelt=40.929289111
+   73  curl "http://localhost:1337/list?latitudegt=10.0102380&latitudelt=30.0102380&longitudegt=20.929289111l&longitudelt=40.929289111"
+   74  curl "http://localhost:3000/list?latitudegt=10.0102380&latitudelt=30.0102380&longitudegt=20.929289111l&longitudelt=40.929289111"
+   75  exit
+   76  ls
+   77  cd docker-entrypoint-initdb.d/
+   78  ls
+   79  vi setup.js 
+   80  mongo
+   81  cd /webcom/
+   82  ls
+   83  exit
+   84  mongo
+   85  exit
+   86  mongo admin -u admin
+   87  mongo webcom -u webcom
+   88  exit
+   89  netstat -ano
+   90  tcpdump
+   91  apt install tcpdump
+   92  tcpdump port 3000
+   93  tcpdump port 3000 -s 10000 -o test
+   94  tcpdump port 3000 -s 10000 -w test
+   95  vi test 
+   96  ls
+   97  pwd
+   98  exit
+   99  history
+  100  ls
+  101  netstat -ano
+  102  cd /webcom/
+  103  ls
+  104  vi app.js
+  105  cd routes/
+  106  ls
+  107  vi list.js 
+  108  cd ..
+  109  ls
+  110  ps axu | grep app
+  111  kill -9 94
+  112  ps axu | grep app
+  113  pwd
+  114  ls
+  115  node app
+  116  ls
+  117  history 
+  118  ll
+  119  cd webcom/
+  120  ls
+  121  vi app.js
+  122  cd routes/
+  123  ls
+  124  vi list.js 
+  125  cd ..
+  126  node app
+  127  ls
+  128  cd routes/
+  129  ls
+  130  vi list.js 
+  131  netstat -ano
+  132  vi list.js 
+  133  cd ..
+  134  netstat -ano
+  135  node app
+  136  ps axu | grep nod
+  137  ls
+  138  fg
+  139  ps axu | grep node
+  140  kill -9 161
+  141  ls
+  142  cd webcom/
+  143  ls
+  144  node app
+  145  cd 
+  146  ls
+  147  cd -
+  148  ls
+  149  cd routes/
+  150  l
+  151  ls
+  152  vi list.js 
+  153  cd ..
+  154  node app
+  155  ls
+  156  history
+  157  ls
+  158  cd webcom
+  159  node app
+  160  ls
+  161  pwd
+  162  ls -al
+  163  cd webcom/
+  164  ls
+  165  node app.js
+  166  exit
+  167  ls
+  168  cd webcom/
+  169  ls
+  170  node app
+  171  exit
+  172  ls
+  173  cd webcom/
+  174  ls
+  175  node app
+  176  ls webcom/
+  177  node webcom/app.js
+  178  cd webcom/
+  179  cd  ..
+  180  ls
+  181  cd webcom/
+  182  ls
+  183  node app.js
+  184  node webcom/app.js
+  185  ls
+  186  cd webcom/
+  187  ls
+  188  ls node_modules/
+  189  ls
+  190  rm app.js_bk 
+  191  ls
+  192  node registWebcom.js 
+  193  mongo -u "webcom" -p "webcom" --authenticationDatabase="webcom"
+  194  netstat -ano
+  195  node app
+  196  netstat -ano | more
+  197  mongo -u "webcom" -p "webcom" --authenticationDatabase="webcom"
+  198  ls
+  199  netstat -ano
+  200  cd webcom/
+  201  ls
+  202  node app
+  203  cd webcom/
+  204  ls
+  205  node app
+  206  exit
+  207  ls
+  208  cd data/
+  209  ls
+  210  cd db/
+  211  ls
+  212  history
+  213  >
+  214  -compiler-plugin</artifactId>
+  215  figuration>
+  216  coding>UTF-8</encoding>
+  217  figuration>
+  218  >
+  219  history > /tmp/log

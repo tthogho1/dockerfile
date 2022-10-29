@@ -1,0 +1,70 @@
+version: "3"
+
+services:
+  mod_cluster:
+    image: tthogho1/mod_cluster_wstunnel:latest
+    ports:
+      - 80:80
+    privileged: true
+    command: /sbin/init
+    networks:
+      - applan
+    restart: always
+    
+  zabbixSvr:
+    image: tthogho1/zabbix:latest
+    ports:
+       - 81:80
+    privileged: true
+    command: /sbin/init
+    networks:
+      - ctrllan
+    restart: always
+
+  wildfly:
+    image: tthogho1/wildflydemo:latest
+    ports:
+      - 8080:8080
+    networks:
+      ctrllan:
+      applan:
+    restart: always
+
+  mongodb:
+    image: tthogho1/mongodb:latest
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=admin
+      - MONGO_INITDB_ROOT_PASSWORD=mongo
+      - MONGO_INITDB_DATABASE=webcom
+    ports:
+      - 27017:27017
+    command: mongod --auth
+    networks:
+      ctrllan:
+      applan:
+    restart: always
+
+  mongoap:
+    image: tthogho1/mongoap:latest
+    ports:
+      - 3000:3000
+    command: node /webcom/app.js
+    networks:
+      ctrllan:
+      applan:
+    restart: always
+
+networks:
+  applan:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.16.1.0/24
+  ctrllan:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 192.168.1.0/24
+
